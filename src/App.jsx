@@ -7,14 +7,29 @@ import img3 from '../images/img3.jpeg'
 import img4 from '../images/img4.jpeg'
 import img5 from '../images/img5.webp'
 import img6 from '../images/img6.jpg'
+import { useState } from 'react'
 
 function App() {
 
+  const [isMenuOpened, setIsMenuOpened] = useState('-100%')
+
+  const onClickMenuOpen = () => {
+    setIsMenuOpened( '0' )
+  }
+
+  const onClickMenuClose = () => {
+    setIsMenuOpened( '-100%' )
+  }
+
   return (
     <div className='main'>
-      <aside className='sidebar'>
+      <aside className='sidebar'
+        style={{
+          'left': isMenuOpened
+        }}
+      >
         <div className='logo'>
-          <button className='menu-btn' id='menu-close'>
+          <button className='menu-btn' id='menu-close' onClick={ onClickMenuClose }>
             <i className="fa-solid fa-angle-left"></i>
           </button>
           <i className="fa-solid fa-heart-pulse"></i>
@@ -107,7 +122,7 @@ function App() {
       <main>
         <header>
           <div className="nav-links">
-            <button className='menu-btn' id='menu-open'>
+            <button className='menu-btn' id='menu-open' onClick={ onClickMenuOpen }>
               <i className="fa-solid fa-bars"></i>
             </button>
             <a href="">Music</a>

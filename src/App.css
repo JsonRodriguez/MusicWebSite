@@ -63,8 +63,7 @@ html, body{
   transition: all 0.3s ease;
 }
 
-.main .sidebar .logo:hover a,
-.main .sidebar .logo:hover i,
+.main .sidebar .logo a:hover,
 .main .sidebar .menu ul li:hover a,
 .main .sidebar .menu ul li:hover i,
 .main main header .nav-links a:hover{
@@ -229,11 +228,13 @@ html, body{
 .main main .trending img{
   width: 300px;
   height: 200px;
+  transition: all 0.3s ease;
 }
 
 .main main .playlist{
   margin-top: 14px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
 }
 
@@ -242,7 +243,6 @@ html, body{
   background-color: #202026;
   padding: 20px;
   border-radius: 6px;
-  width: 40%;
 }
 
 .main main .playlist .genres .header,
@@ -314,7 +314,6 @@ html, body{
   padding: 20px;
   color: #fff;
   border-radius: 6px;
-  width: 65%;
 }
 
 .main main .playlist .music-list .items .item{
@@ -529,7 +528,7 @@ html, body{
 
 .main main header .nav-links button,
 .main .sidebar .logo button{
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: #1d1d1d;
@@ -541,6 +540,14 @@ html, body{
   margin-right: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+#menu-open{
+  display: none;
+}
+
+#menu-close{
+  display: none;
 }
 
 @media screen and (max-width: 1400px){
@@ -563,7 +570,7 @@ html, body{
   }
 
   .main main .playlist .genres{
-    width: 30%;
+    /* width: 30%; */
   }
 
   .main main .playlist .genres .items{
@@ -590,6 +597,10 @@ html, body{
     width: 40%;
   }
 
+  .main main .playlist{
+    grid-template-columns: 1fr;
+  }
+
   .main main .trending .left .info h2{
     font-size: 24px;
   }
@@ -610,10 +621,11 @@ html, body{
   }
 
   .main main .playlist .genres{
-    display: none;
+    order: 2;
   }
 
   .main main .playlist .music-list{
+    order: 1;
     width: 100%;
   }
 
@@ -657,15 +669,107 @@ html, body{
 }
 
 @media screen and (max-width: 992px){
+
+  #menu-open{
+    display: inline;
+  }
+
+  #menu-close{
+    display: inline;
+  }
+
   .main{
     grid-template-columns: 3fr 2fr;
   }
 
   .main .sidebar{
-    position: absolute;
+    position: fixed;
     left: -100%;
   }
+
+  .main .sidebar .playing{
+    display: none;
+  }
+
+  .main main header .nav-links a{
+    font-size: 13px;
+  }
+
+  .main main header .search{
+    width: 38px;
+  }
   
+  .main main header .search input{
+    display: none;
+  }
+
+  .main main .trending img{
+    width: 150px;
+    height: auto;
+  }
+
+  .main main .playlist{
+    margin-top: 40px;
+  }
+
+  .main .right-section .music-player{
+    height: 87%;
+  }
+
+  .main .right-section .music-player .song-info img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .main .right-section .music-player .player-actions .buttons{
+    margin-top: 38px;
+  }
+
+  .main .right-section .music-player .player-actions .buttons i{
+    font-size: 18px;
+  }
+
+  .main main header .nav-links button,
+  .main .sidebar .logo button{
+    display: flex;
+  }
+}
+
+@media screen and ( max-width: 768px ) {
+
+  .main{
+    grid-template-columns: 1fr;
+  }
+
+  .main main header .search{
+    width: 38px;
+  }
+
+  .main main header .search input{
+     display: none;
+  }
+
+  .main .right-section{
+    padding: 20px 0px;
+  }
+
+  .main .right-section .profile{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .main .right-section .music-player{
+    height: 100%;
+  }
+
+  .main .right-section .music-player .song-info img{
+    width: 300px;
+    height: auto;
+  }
+
+  .main .right-section .music-player .song-info i{
+    font-size: 22px;
+  }
 }
 
 
