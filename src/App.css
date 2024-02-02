@@ -741,6 +741,10 @@ html, body{
     grid-template-columns: 1fr;
   }
 
+  .main main{
+    padding: 20px 10px;
+  }
+
   .main main header .search{
     width: 38px;
   }
