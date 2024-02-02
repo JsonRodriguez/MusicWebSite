@@ -20,7 +20,7 @@ An elegant and responsive design 💻🎨 for a music 🎶 player landing page! 
   <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/8d544afa-4e42-420d-bb69-074f69fcdcc8" alt="pag4">
 </p>
 
-<p>
+<p align="center">
   <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/8e31c01a-fbf5-41f8-a9d7-06db39f56983" alt="pag5">
 </p>
 
