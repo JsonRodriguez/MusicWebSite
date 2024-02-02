@@ -4,13 +4,21 @@ An elegant and responsive design 💻🎨 for a music 🎶 player landing page! 
 
 ## Screenshots 📷
 
-![Pag1](https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/2059f738-860e-4d27-8b85-e778cd075034)
+<p align="center">
+  <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/2059f738-860e-4d27-8b85-e778cd075034" alt="Pag1">
+</p>
 
-![Pag2](https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/c1e7b067-fbd5-41fa-a633-865f1c24c822)
+<p align="center">
+  <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/c1e7b067-fbd5-41fa-a633-865f1c24c822" alt="Pag2">
+</p>
 
-![pag3](https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/f1562842-b402-4de8-932a-bddfc7d6cf3f)
+<p align="center">
+  <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/f1562842-b402-4de8-932a-bddfc7d6cf3f" alt="pag3">
+</p>
 
-![pag4](https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/8d544afa-4e42-420d-bb69-074f69fcdcc8)
+<p align="center">
+  <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/8d544afa-4e42-420d-bb69-074f69fcdcc8" alt="pag4">
+</p>
 
 <p align="center">
   <img src="https://github.com/JsonRodriguez/MusicWebSite/assets/105531721/8e31c01a-fbf5-41f8-a9d7-06db39f56983" alt="pag5">
